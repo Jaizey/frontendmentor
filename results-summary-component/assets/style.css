@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "Hankengrotesk";
+  src: url(/assets/fonts/hankengrotesk-variablefont_wght-webfont.woff2)
+    format("woff2");
+}
+.attribution {
+  font-size: 11px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: "Hankengrotesk", serif;
+  color: #cfcfdf;
+}
+
+.column {
+  margin-top: 20vh;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 24px;
+  box-shadow: 1px 10px 20px hsla(224, 30%, 27%, 0.3);
+}
+
+.col1 {
+  border-radius: 24px;
+  background-image: linear-gradient(
+    hsl(252, 100%, 67%),
+    hsla(241, 81%, 54%, 0.8)
+  );
+}
+
+.circle {
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  left: 30px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+}
+
+.content-col1,
+.content-col2 {
+  padding: 30px;
+}
+
+.total {
+  position: absolute;
+  top: 35px;
+  right: 45px;
+  line-height: 5px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 50px;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.total p {
+  color: #cfcfdf;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.great {
+  color: white;
+}
+
+.info {
+  margin-top: 15px;
+  line-height: 18px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.content-col2 {
+  color: black;
+}
+
+.reac,
+.mem,
+.ver,
+.vis {
+  margin-top: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0.5rem;
+}
+
+.reac {
+  margin-top: 20px;
+  background-color: hsla(0, 100%, 83%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+
+.mem {
+  background-color: hsl(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+
+.ver {
+  background-color: hsl(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+
+.vis {
+  background-color: hsl(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+.react-span b,
+.mem span b,
+.ver span b,
+.vis-span b {
+  color: hsl(224, 30%, 27%);
+}
+
+.react-span,
+.mem-span,
+.ver-span,
+.vis-span {
+  color: gray;
+  font-weight: 700;
+}
+
+.reac1,
+.mem1,
+.ver1,
+.vis1 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.button {
+  border-radius: 20px;
+  margin-top: 40px;
+  padding: 10px;
+  background-image: linear-gradient(
+    hsl(252, 100%, 73%),
+    hsla(241, 81%, 54%, 0.8)
+  );
+  font-weight: bold;
+  color: white;
+}
+.button:hover {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
+@media screen and (max-width: 576px) {
+  .column {
+    margin-top: -18px;
+    height: 100vh;
+  }
+  .circle {
+    left: 75px;
+  }
+  .total {
+    top: 35px;
+  }
+}
