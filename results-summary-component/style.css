@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Hankengrotesk";
-  src: url(/assets/fonts/hankengrotesk-variablefont_wght-webfont.woff2)
+  src: url(assets/fonts/hankengrotesk-variablefont_wght-webfont.woff2)
     format("woff2");
 }
 .attribution {
