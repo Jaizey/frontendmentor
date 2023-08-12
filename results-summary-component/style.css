@@ -33,9 +33,7 @@ body {
 
 .circle {
   position: relative;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  left: 30px;
+  margin: 25px auto;
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -168,11 +166,5 @@ h6 {
   .column {
     margin-top: -18px;
     height: 100vh;
-  }
-  .circle {
-    left: 75px;
-  }
-  .total {
-    top: 35px;
   }
 }
