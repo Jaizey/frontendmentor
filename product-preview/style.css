@@ -1,0 +1,144 @@
+:root {
+--darkcyan: hsl(158, 36%, 37%);
+--cream: hsl(30, 38%, 92%);
+--ver-dark-blue: hsl(212, 21%, 14%);
+--dark-grayish-blue: hsl(228, 12%, 48%);
+--white: hsl(0, 0%, 100%);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--cream);
+}
+
+.container {
+    width: 650px;
+    margin: 20vh auto;
+    height: 500px;
+    display: flex;
+}
+
+.left-col {
+    width: 50%;
+    background: url(images/image-product-desktop.jpg);
+    background-size: cover;
+    border-radius: 16px 0 0 16px;
+
+}
+.right-col {
+    width: 50%;
+    background-color: var(--white);
+    border-radius: 0 16px 16px 0;
+    padding: 38px;
+ 
+}
+
+p {
+    font-size: 14px;
+}
+
+.product-name {
+    color: var(--dark-grayish-blue);
+    letter-spacing: 5px;
+}
+
+h2 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 40px;
+    line-height: 36px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.description {
+    color: var(--dark-grayish-blue);
+    line-height: 22px;
+    margin-bottom: 35px;
+}
+
+.price {
+    color: var(--darkcyan);
+}
+
+.price, .strike {
+    display: inline;
+}
+
+.strike {
+    position: relative;
+    left: 12px;
+    bottom: 8px;
+    text-decoration:line-through;
+    color: var(--dark-grayish-blue)
+}
+
+.cart-btn {
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    background-color: var(--darkcyan);
+    text-align: center;
+    border-radius: 8px;
+}
+
+.cart-btn a {
+    text-decoration: none;
+    color: var(--white);
+    line-height: 40px;
+}
+
+.cart-btn::before {
+    content: url(images/icon-cart.svg);
+    position: relative;
+    top: 3px;
+    padding:5px;
+    left: -5px;
+}
+
+.cart-btn:hover {
+    background-color: hsl(158, 45%, 20%);
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 90%;
+        flex-direction: column;
+        margin: 20px auto;
+        height: 100%;
+    }
+    .left-col {
+        width: 100%;
+        background: url(images/image-product-mobile.jpg);
+        background-size: cover;
+        background-position-x: -30px;
+        height: 300px;
+        border-radius: 16px 16px 0 0;
+}
+    .right-col {
+    width: 100%;
+    border-radius: 0px 0px 16px 16px;
+    padding: 24px;
+}
+    h2 {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 16px;;
+    }
+    .description {
+        margin-bottom: 20px;
+}
+    .cart-btn {
+        margin-top: 20px;
+    }
+}
